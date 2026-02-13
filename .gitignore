@@ -1,0 +1,29 @@
+# --- Security: Prevent accidental leaks of local data ---
+*.pdf
+*.txt
+!requirements.txt
+
+*.png
+*.jpg
+*.jpeg
+
+# --- Project Specific Output ---
+*_steps/
+*_streams/
+*_rem.pdf
+
+# --- Python Environment ---
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+
+# --- Editor / IDE ---
+.vscode/
+.idea/
+.DS_Store
+
+# --- Output Directory ---
+output/
+temp/
