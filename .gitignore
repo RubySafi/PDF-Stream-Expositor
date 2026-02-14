@@ -4,6 +4,7 @@
 !requirements.txt
 
 *.png
+!sample/mask.png
 *.jpg
 *.jpeg
 

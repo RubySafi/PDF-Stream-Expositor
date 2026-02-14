@@ -14,6 +14,9 @@ The project is organized into the following directories:
   - `extractor.py`: Extracts raw content streams into human-readable text.
   - `stepper.py`: Generates incremental PDFs to identify exactly where elements disappear.
   - `remover.py`: Comments out specific operators (e.g., `Do`) to reveal background content.
+- `/sample`: Contains sample files.
+  - `create_sample.py`: Generates a sample PDF (`target.pdf`).
+  - `mask.png`: Mask image used for the sample PDF.
 - `main.py`: The entry point to execute the analysis modules.
 - `requirements.txt`: Lists the necessary Python dependencies.
 
@@ -36,6 +39,15 @@ To effectively demask hidden content, follow these steps:
 
 3. **Removal**: Use `remover.py` to comment out the identified line(s) or range. This will generate a "cleaned" PDF with the hidden content exposed.
 
+## Quick Start (Try with Sample)
+To see the tool in action, you can generate a sample masked PDF:
+
+1. **Generate Sample**:
+   ```bash
+   python sample/create_sample.py
+   ```
+2. **Analyze**:
+Run `main.py` (pre-configured for `sample/target.pdf`) to see how the hidden message is revealed in the generated output files.
 
 ## Release / Output Directory
 
